@@ -1,0 +1,249 @@
+/* Global Styles Start */
+
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, label {
+  font-family: Lato;
+}
+
+.income-statement ul,
+.balance-sheet-assets,
+.balance-sheet-liabilities,
+.customer-wrapper-customers,
+.operating-inner-list,
+.investing-inner-list,
+.financing-inner-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 2px 0 2px 2px;
+}
+
+.income-statement ul li,
+.balance-sheet-assets li,
+.balance-sheet-liabilities li,
+.customer-wrapper-customers li,
+.operating-inner-list li,
+.investing-inner-list li,
+.financing-inner-list li {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  margin: 12px 0;
+  width: 100%;
+}
+
+.item-name {
+  font-size: 10px;
+}
+
+.item-total {
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 100%;
+  display: block;
+  height: 45px;
+  line-height: 45px;
+  margin-right: 5px;
+  text-align: center;
+  width: 45px;
+}
+
+/* Global Styles End */
+
+.gameboard-wrapper {
+  display: flex;
+  height: 800px;
+  margin: 0 auto;
+  max-width: 1075px;
+  outline: 1px solid red;
+}
+
+.customer-wrapper {
+  height: 100%;
+  width: 20%;
+}
+
+.customer-wrapper h5 {
+  text-align: center;
+}
+
+.customer-wrapper-customer {
+  display: flex;
+}
+
+.customer-wrapper-customer h5 {
+  /* margin-top: 125px;
+  transform: rotate(270deg);
+  transform-origin: 0 0; */
+}
+
+.customer-wrapper-customers {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  width: 80%;
+}
+
+.bank {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.income-balance-wrapper {
+  align-items: flex-end;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 60%;
+}
+
+.operating-wrapper {
+  height: 100%;
+  width: 20%;
+}
+
+.medica-brand-wrapper {
+  border: 1px solid black;
+  height: 95%;
+  width: 90%;
+}
+
+.medica-brand-wrapper h1 {
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: -22px;
+  text-align: center;
+  width: 50%;
+}
+
+.income-balance-inner-wrapper {
+  align-items: center;
+  display: flex;
+  height: 97%;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.income-statement,
+.balance-sheet {
+  background-color: rgb(207, 205, 205);
+  border: 1px solid black;
+  height: 99%;
+}
+
+.income-statement {
+  width: 40%;
+}
+
+.income-statement h3 {
+  text-align: center;
+}
+
+.totals-wrapper {
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  margin: 6px auto;
+  padding-top: 20px;
+  width: 98%;
+}
+
+.expense {
+  background-color: red;
+  color: white;
+}
+
+.revenue {
+  background-color: black;
+  color: white;
+}
+
+.balance-sheet {
+  width: 58%;
+}
+
+.balance-sheet h3,
+.balance-sheet h5 {
+  text-align: center;
+}
+
+.balance-sheet-inner-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.balance-sheet-assets li .item-total,
+.balance-sheet-liabilities li .item-total {
+  margin-left: 10px;
+}
+
+/* .net-assets {
+} */
+
+.net-assets-inner-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Transaction Menu Styles Begin */
+
+.transaction-menu-full-screen {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.6);
+  display: none;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.transaction-menu-full-screen.visible {
+  display: flex;
+}
+
+.transaction-menu-inner {
+  background: rgb(34, 32, 32);
+  color: rgba(255, 255, 255, 0.9);
+  height: 400px;
+  padding: 0 6px;
+  width: 400px;
+  z-index: 100;
+}
+
+.transaction-form {
+  display: flex;
+  margin: 6px auto;
+  width: 98%;
+}
+
+.transaction-form input {
+  width: 12%;
+}
+
+.transaction-form label {
+  flex-grow: 2;
+}
+
+.transaction-form button {
+  margin-left: 2px;
+}
+
+.transaction-menu-button-done {
+  margin-top: 10px;
+}
+
+/* Transaction Menu Styles End */
